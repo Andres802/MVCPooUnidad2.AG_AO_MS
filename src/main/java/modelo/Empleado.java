@@ -15,16 +15,17 @@ public class Empleado {
     private String nombre;
     private LocalDate fechaNacimiento;
     private String cedula;
-    private Empresa sueldo;
+    private Empresa empresa;
     private int codigoEmpleado;
     private int horasTrabajadas;
 
-    public Empleado(String nombre, LocalDate fechaNacimiento, String cedula, int horasTrabajadas, int codigoEmpleado , Empresa sueldoEmpresa) {
+    public Empleado(String nombre, LocalDate fechaNacimiento, String cedula, int horasTrabajadas, int codigoEmpleado , Empresa empresa) {
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.cedula = cedula;
         this.horasTrabajadas = horasTrabajadas;
         this.codigoEmpleado =codigoEmpleado;
+        this.empresa = empresa;
     }
 
    
@@ -62,11 +63,11 @@ public class Empleado {
     }
 
     public Empresa getSueldoEmpresa() {
-        return sueldo;
+        return empresa;
     }
 
     public void setSueldoEmpresa(Empresa sueldoEmpresa) {
-        this.sueldo = sueldoEmpresa;
+        this.empresa = sueldoEmpresa;
     }
 
     public int getCodigoEmpleado() {
